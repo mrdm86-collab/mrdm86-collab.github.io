@@ -3,7 +3,7 @@
 
 // Configuration
 const CONFIG = {
-  clientId: 'your_github_client_id', // 需要配置
+  clientId: 'Ov23li11LuFcZ8IYzRz2', // GitHub OAuth App Client ID
   redirectUri: `${window.location.origin}/admin/callback`,
   scope: 'user:email repo',
   apiBaseUrl: 'https://api.github.com',

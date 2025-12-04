@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novatra AI - 博客管理</title>
+    <script>
+        // GitHub Pages SPA 路由处理
+        (function() {
+            const path = window.location.pathname;
+
+            // 管理后台路由处理
+            if (path.startsWith('/admin')) {
+                if (path === '/admin' || path === '/admin/') {
+                    window.location.replace('/admin/login.html');
+                } else if (path === '/admin/login') {
+                    window.location.replace('/admin/login.html');
+                } else if (path === '/admin/dashboard') {
+                    window.location.replace('/admin/dashboard.html');
+                } else if (path === '/admin/callback') {
+                    window.location.replace('/admin/callback.html');
+                } else {
+                    // 其他 admin 路由重定向到登录页
+                    window.location.replace('/admin/login.html');
+                }
+                return;
+            }
+
+            // 其他路由重定向到首页
+            window.location.replace('/');
+        })();
+    </script>
+</head>
+<body>
+    <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; background: #f8fafc; color: #334155;">
+        <div style="text-align: center;">
+            <div style="width: 40px; height: 40px; border: 4px solid #e2e8f0; border-top: 4px solid #14b8a6; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 1rem;"></div>
+            <p>正在跳转...</p>
+        </div>
+    </div>
+    <style>
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</body>
+</html>

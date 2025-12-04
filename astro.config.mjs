@@ -6,7 +6,7 @@ import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
 export default defineConfig({
-  site: 'https://novatra-ai.github.io', 
+  site: 'https://mrdm86-collab.github.io',
   base: '/',
   devToolbar: { enabled: false },
   
